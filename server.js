@@ -49,7 +49,7 @@ app.route('/api/manifests')
     var manifestUris = [];
     manifestFiles.map((manifestFilename, index) => {
       manifestUris.push({
-        uri: req.protocol + '://' + req.headers.host + '/manifests/' + manifestFilename
+        uri: req.protocol + '://' + req.headers.host + '/api/manifests/' + manifestFilename
       })
     });
 
