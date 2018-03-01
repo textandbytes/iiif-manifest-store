@@ -13,7 +13,7 @@ A simple Node application to store and retrieve IIIF manifests via REST API
 
 * Clone this repository: `git clone git@github.com:textandbytes/iiif-manifest-store.git`
 * Change into the project directory: `cd iiif-manifest-store`
-* Install Node v8.1.4 with nvm: `nvm install v8.1.4`
+* Install Node v8.1.4 with nvm: `nvm install v8.9.4`
 * Install the required node modules into the project: `npm install`
 
 ## How to run the application ##
