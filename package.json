@@ -1,0 +1,25 @@
+{
+  "name": "iiif-manifest-store",
+  "version": "0.1.0",
+  "description": "A simple Node application to store and retrieve IIIF manifests via REST API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/textandbytes/iiif-manifest-store.git"
+  },
+  "keywords": [
+    "iiif",
+    "manifest",
+    "store"
+  ],
+  "author": "text & bytes LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/textandbytes/iiif-manifest-store/issues"
+  },
+  "homepage": "https://github.com/textandbytes/iiif-manifest-store#readme"
+}
