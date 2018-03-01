@@ -1,0 +1,29 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "example-manifest",
+  "@type": "sc:Manifest",
+  "label": "Example Manifest",
+  "metadata": [],
+  "description": [
+    {
+      "@value": "Example Description",
+      "@language": "en"
+    }
+  ],
+  "license": "https://creativecommons.org/licenses/by/3.0/",
+  "attribution": "Example Attribution",
+  "sequences": [
+    {
+      "@id": "example-sequence",
+      "@type": "sc:Sequence",
+      "label": [
+        {
+          "@value": "Example Sequence Label",
+          "@language": "en"
+        }
+      ],
+      "canvases": []
+    }
+  ],
+  "structures": []
+}

@@ -39,4 +39,5 @@ jspm_packages/
 # dotenv environment variables file
 .env
 
-data/manifests
+data/manifests/*
+!data/manifests/example-manifest
