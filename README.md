@@ -1,5 +1,5 @@
 # iiif-manifest-store
-A simple Node application to store and retrieve IIIF manifests via REST API
+A simple Node application to store and retrieve IIIF manifests via REST API. It can be used in conjunction with the [IIIF Manifest Editor](https://github.com/bodleian/iiif-manifest-editor) to store manifests remotely. Please note that this application currently does not support authentication so anybody can POST and GET manifests to the store. Use it behind a firewall and/or for testing purposes only.
 
 
 ## How to set up the application ##
@@ -9,7 +9,7 @@ A simple Node application to store and retrieve IIIF manifests via REST API
 * Install npm globally: https://github.com/npm/npm
 * Install nvm (Node Version Manager) globally: https://github.com/creationix/nvm
 
-### How to set up the application ###
+### Installation ###
 
 * Clone this repository: `git clone git@github.com:textandbytes/iiif-manifest-store.git`
 * Change into the project directory: `cd iiif-manifest-store`
