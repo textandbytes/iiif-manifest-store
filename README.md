@@ -31,3 +31,102 @@ A simple Node application to store and retrieve IIIF manifests via REST API. It 
 | /api/manifests/:manifestId | PUT           | Update manifest with id                             |
 | /api/manifests/:manifestId | DELETE        | Delete manifest with id (currently not implemented) |
 
+### Get a List of All Manifests ###
+
+**Request:** GET /api/manifests
+
+Example URL: http://localhost:3001/api/manifests
+
+**HTTP Status Code:** 200 OK
+
+**Response:**
+
+```javascript
+{"manifests":
+  [
+    {"uri":"http://localhost:3001/api/manifests/6b3bf0a8-b8f6-452a-bcbf-f336ff335c93"},
+    {"uri":"http://localhost:3001/api/manifests/db45e27f-edbf-446b-8794-eb9070c3647e"},
+    {"uri":"http://localhost:3001/api/manifests/example-manifest"}
+  ]
+}
+```
+
+### Create a Manifest ###
+
+**Request:** POST /api/manifests
+
+Example URL: http://localhost:3001/api/manifests
+
+**HTTP Status Code:** 201 Created
+
+**Response:**
+
+```javascript
+{
+    "uri": "http://localhost:3001/api/manifests/f20c81a0-be0f-4cc6-bf48-891429faad11"
+}
+```
+
+### Update a Manifest ###
+
+**Request:** PUT /api/manifests/manifestId
+
+Example URL: http://localhost:3001/api/manifests/example-manifest
+
+**HTTP Status Code:** 200 OK
+
+**Response:**
+
+```javascript
+{
+    "message": "Manifest successfully updated"
+}
+```
+
+
+### Get a Single Manifest ###
+
+**Request:** GET /api/manifests/manifestId
+
+Example URL: http://localhost:3001/api/manifests/example-manifest
+
+**HTTP Status Code:** 200 OK
+
+**Response:**
+
+```javascript
+{
+    {
+        "@context": "http://iiif.io/api/presentation/2/context.json",
+        "@id": "example-manifest",
+        "@type": "sc:Manifest",
+        "label": "Example Manifest",
+        "metadata": [],
+        "description": [
+            {
+                "@value": "Example Description",
+                "@language": "en"
+            }
+        ],
+        "license": "https://creativecommons.org/licenses/by/3.0/",
+        "attribution": "Example Attribution",
+        "sequences": [
+            {
+                "@id": "example-sequence",
+                "@type": "sc:Sequence",
+                "label": [
+                    {
+                        "@value": "Example Sequence Label",
+                        "@language": "en"
+                    }
+                ],
+                "canvases": []
+            }
+        ],
+        "structures": []
+    }
+}
+```
+
+
+
