@@ -21,3 +21,13 @@ A simple Node application to store and retrieve IIIF manifests via REST API
 * Start the server: `npm run start`
   * The application will run on [http://localhost:3001](http://localhost:3001) by default
 
+## API ##
+
+| Route                      | HTTP Verb     | Description                                         |
+| -------------------------- | ------------- | --------------------------------------------------- |
+| /api/manifests             | GET           | Get all manifests                                   |
+| /api/manifests             | POST          | Create a manifest - returns manifest uri            |
+| /api/manifests/:manifestId | GET           | Get manifest by id                                  |
+| /api/manifests/:manifestId | PUT           | Update manifest with id                             |
+| /api/manifests/:manifestId | DELETE        | Delete manifest with id (currently not implemented) |
+
